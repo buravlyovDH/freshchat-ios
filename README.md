@@ -1,5 +1,5 @@
-Freshchat iOS SDK
-=================
+Freshchat iOS SDK Cocoapods with XCFramework (Beta)
+===================================================
 
 "Modern messaging software that your sales and customer engagement teams will love." [Freshchat](http://www.freshchat.com) by [Freshworks](https://www.freshworks.com).
 
@@ -11,15 +11,15 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 
 target 'Your project target' do
-pod 'FreshchatSDK'
+pod 'FreshchatSDK', :git => 'https://github.com/freshdesk/freshchat-ios', :branch => 'cocoapods_xcframework'
 end
 ```
 
-#### Samples
-[Objective-C](https://github.com/freshdesk/freshchat-ios/tree/master/Sample/ObjectiveCSample)
 
-[Swift](https://github.com/freshdesk/freshchat-ios/tree/master/Sample/SwiftSample)
+## Existing Issue 
+1. App version always comes as 1.0 (We are fixng this in upcoming release)
 
+Note : For SPM - Drag and Drop - FCLocalization.bundle, FCResources.bundle and FreshchatModels.bundle from FreshchatSDK folder
 
 ## Documentation
 [Integration Guide](https://support.freshchat.com/support/solutions/articles/50000000048-freshchat-ios-sdk-integration-steps) 
