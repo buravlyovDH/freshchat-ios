@@ -13,16 +13,12 @@ Pod::Spec.new do |s|
   s.social_media_url     = "https://twitter.com/freshchatapp"
   s.platform     		 = :ios, "9.0"
   s.source       		 = { :git => "https://github.com/freshdesk/freshchat-ios.git", :tag => "v#{s.version}" }
-  s.source_files 		 = "FreshchatSDK/*.{h,m}"
-  s.preserve_paths 		 = "FreshchatSDK/*"
+  s.source_files 		 = "FreshchatSDK.xcframework/**/Headers/*.{h,m}"
+  s.preserve_paths      = "FreshchatSDK.xcframework"
   s.resources 			 = "FreshchatSDK/FCResources.bundle", "FreshchatSDK/FreshchatModels.bundle", "FreshchatSDK/FCLocalization.bundle"
-  s.ios.vendored_library = "FreshchatSDK/libFDFreshchatSDK.a"
   s.frameworks 			 = "Foundation", "AVFoundation", "AudioToolbox", "CoreMedia", "CoreData", "ImageIO", "Photos", "SystemConfiguration", "Security", "WebKit", "CoreServices"
   s.xcconfig       		 = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/FreshchatSDK"' }
   s.requires_arc 		 = true
-  s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.vendored_frameworks = "FreshchatSDK.xcframework"
 
 end
