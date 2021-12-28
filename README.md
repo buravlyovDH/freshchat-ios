@@ -19,7 +19,11 @@ end
 ## Existing Issue 
 1. App version always comes as 1.0 (We are fixng this in upcoming release)
 
-Note : For SPM - Drag and Drop - FCLocalization.bundle, FCResources.bundle and FreshchatModels.bundle from FreshchatSDK folder
+
+
+Note : 
+- After fixing the issue, this branch will be merged into master. 
+- For SPM - Drag and Drop - FCLocalization.bundle, FCResources.bundle and FreshchatModels.bundle from FreshchatSDK folder
 
 ## Documentation
 [Integration Guide](https://support.freshchat.com/support/solutions/articles/50000000048-freshchat-ios-sdk-integration-steps) 
