@@ -16,7 +16,7 @@ end
 ```
 
 
-## Existing Issue 
+## Existing minor bug 
 1. App version always comes as 1.0 (We are fixng this in upcoming release)
 
 
